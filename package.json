@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/calipsa/eslint-config-typescript#readme",
   "dependencies": {
-    "@calipsa/eslint-config": "^1.8.0",
+    "@calipsa/eslint-config": "^1.9.0",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
     "eslint-import-resolver-typescript": "^2.0.0",
