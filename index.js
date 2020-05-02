@@ -2,7 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
 
   extends: [
-    '@calipsa/eslint-config',
+    '@inker/eslint-config',
     'plugin:@typescript-eslint/recommended',
   ],
 

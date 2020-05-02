@@ -1,15 +1,15 @@
 {
-  "name": "@calipsa/eslint-config-typescript",
-  "version": "1.8.0",
-  "description": "Shareable eslint TypeScript config for Calipsa",
+  "name": "@inker/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript Eslint config",
   "main": "index.js",
   "scripts": {
     "test": "eslint -c index.js --no-eslintrc index.js",
-    "release": "np"
+    "release": "np --no-cleanup"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calipsa/eslint-config-typescript.git"
+    "url": "git+https://github.com/inker/eslint-config-typescript.git"
   },
   "keywords": [
     "eslint",
@@ -19,11 +19,11 @@
   "author": "Anton Veselev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/calipsa/eslint-config-typescript/issues"
+    "url": "https://github.com/inker/eslint-config-typescript/issues"
   },
-  "homepage": "https://github.com/calipsa/eslint-config-typescript#readme",
+  "homepage": "https://github.com/inker/eslint-config-typescript#readme",
   "dependencies": {
-    "@calipsa/eslint-config": "^1.15.0",
+    "@inker/eslint-config": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint-import-resolver-typescript": "^2.0.0",
