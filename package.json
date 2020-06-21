@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/inker/eslint-config-typescript#readme",
   "dependencies": {
-    "@inker/eslint-config": "^1.1.0",
+    "@inker/eslint-config": "^1.1.1",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "eslint-import-resolver-typescript": "^2.0.0",
