@@ -24,14 +24,14 @@
   "homepage": "https://github.com/inker/eslint-config-typescript#readme",
   "dependencies": {
     "@inker/eslint-config": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
-    "@typescript-eslint/parser": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.2"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "np": "^6.2.3",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   }
 }
