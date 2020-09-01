@@ -41,6 +41,8 @@ module.exports = {
   },
 
   rules: {
+    '@typescript-eslint/array-type': 2,
+    '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-explicit-any': 0,
@@ -55,5 +57,11 @@ module.exports = {
         requireLast: false,
       },
     }],
+    '@typescript-eslint/no-unused-vars': [2, {
+      vars: 'all',
+      args: 'after-used',
+      ignoreRestSiblings: false,
+    }],
+    '@typescript-eslint/prefer-optional-chain': 2,
   },
 }
