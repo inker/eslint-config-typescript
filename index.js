@@ -57,6 +57,11 @@ module.exports = {
       },
     }],
     '@typescript-eslint/no-explicit-any': 0,
+    'no-extra-parens': 0,
+    '@typescript-eslint/no-extra-parens': [2, 'all', {
+      enforceForArrowConditionals: false,
+      enforceForNewInMemberExpressions: false,
+    }],
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-unused-vars': [2, {
       vars: 'all',
