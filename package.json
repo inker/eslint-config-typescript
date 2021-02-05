@@ -23,15 +23,15 @@
   },
   "homepage": "https://github.com/inker/eslint-config-typescript#readme",
   "dependencies": {
-    "@inker/eslint-config": "^1.2.2",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "eslint-import-resolver-typescript": "^2.2.1",
-    "eslint-plugin-import": "^2.22.0"
+    "@inker/eslint-config": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "devDependencies": {
-    "eslint": "^7.8.0",
-    "np": "^6.5.0",
-    "typescript": "^4.0.2"
+    "eslint": "^7.19.0",
+    "np": "^7.2.0",
+    "typescript": "^4.1.3"
   }
 }
