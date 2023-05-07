@@ -45,7 +45,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
     '@typescript-eslint/consistent-type-imports': [2, {
-      fixStyle: "inline-type-imports",
+      fixStyle: 'inline-type-imports',
     }],
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
