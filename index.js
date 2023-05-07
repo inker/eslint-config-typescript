@@ -41,7 +41,7 @@ module.exports = {
   },
 
   rules: {
-    "import/consistent-type-specifier-style": [2, "prefer-inline"],
+    'import/consistent-type-specifier-style': [2, 'prefer-inline'],
 
     '@typescript-eslint/array-type': 2,
     '@typescript-eslint/ban-ts-comment': 0,
