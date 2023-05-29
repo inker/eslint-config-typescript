@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

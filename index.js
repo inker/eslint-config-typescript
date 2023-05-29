@@ -1,6 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
 
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+
   extends: [
     '@inker/eslint-config',
     'plugin:@typescript-eslint/recommended',
