@@ -4,6 +4,9 @@ module.exports = {
   extends: [
     '@inker/eslint-config',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@typescript-eslint/strict',
+    'plugin:import/typescript',
   ],
 
   plugins: [
@@ -49,6 +52,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': [2, {
       fixStyle: 'inline-type-imports',
     }],
+    '@typescript-eslint/default-param-last': 2,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/member-delimiter-style': [2, {
@@ -61,6 +65,7 @@ module.exports = {
         requireLast: false,
       },
     }],
+    '@typescript-eslint/method-signature-style': 2,
     '@typescript-eslint/no-explicit-any': 0,
     'no-extra-parens': 0,
     '@typescript-eslint/no-extra-parens': [2, 'all', {
@@ -68,11 +73,13 @@ module.exports = {
       enforceForNewInMemberExpressions: false,
     }],
     '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-shadow': 2,
     '@typescript-eslint/no-unused-vars': [2, {
       vars: 'all',
       args: 'after-used',
       ignoreRestSiblings: false,
     }],
     '@typescript-eslint/prefer-optional-chain': 2,
+    '@typescript-eslint/prefer-readonly': 2,
   },
 }
