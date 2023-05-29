@@ -3,6 +3,9 @@
   "version": "10.7.1",
   "description": "TypeScript Eslint config",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "test": "eslint -c index.js --no-eslintrc index.js",
     "release": "np --no-cleanup"
