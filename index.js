@@ -78,6 +78,7 @@ module.exports = {
     }],
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-shadow': 2,
+    "@typescript-eslint/no-unnecessary-condition": 0,
     '@typescript-eslint/no-unused-vars': [2, {
       vars: 'all',
       args: 'after-used',
