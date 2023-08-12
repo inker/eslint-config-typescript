@@ -84,6 +84,11 @@ module.exports = {
       args: 'after-used',
       ignoreRestSiblings: false,
     }],
+    '@typescript-eslint/prefer-nullish-coalescing': [2, {
+      ignorePrimitives: {
+        string: true,
+      },
+    }],
     '@typescript-eslint/prefer-optional-chain': 2,
     '@typescript-eslint/prefer-readonly': 2,
   },
