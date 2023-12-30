@@ -59,16 +59,6 @@ module.exports = {
     '@typescript-eslint/default-param-last': 2,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    '@typescript-eslint/member-delimiter-style': [2, {
-      multiline: {
-        delimiter: 'comma',
-        requireLast: true,
-      },
-      singleline: {
-        delimiter: 'comma',
-        requireLast: false,
-      },
-    }],
     '@typescript-eslint/method-signature-style': 2,
     '@typescript-eslint/no-explicit-any': 0,
     'no-extra-parens': 0,
