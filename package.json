@@ -1,6 +1,6 @@
 {
   "name": "@inker/eslint-config-typescript",
-  "version": "10.8.1",
+  "version": "11.0.0",
   "description": "TypeScript Eslint config",
   "main": "index.js",
   "engines": {
