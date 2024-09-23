@@ -25,10 +25,13 @@
     "url": "https://github.com/inker/eslint-config-typescript/issues"
   },
   "homepage": "https://github.com/inker/eslint-config-typescript#readme",
+  "dependencies": {
+    "@inker/eslint-config": "^11.2.0",
+    "@stylistic/eslint-plugin-ts": "^2.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0"
+  },
   "peerDependencies": {
-    "@inker/eslint-config": "^11.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "@typescript-eslint/parser": "^7.1.1",
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.25.4"
   },

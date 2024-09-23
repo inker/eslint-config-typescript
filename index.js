@@ -1,21 +1,20 @@
 module.exports = {
+  extends: [
+    '@inker/eslint-config',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:import/typescript',
+  ],
+
+  plugins: [
+    '@stylistic/ts',
+  ],
+
   parser: '@typescript-eslint/parser',
 
   parserOptions: {
     project: './tsconfig.json',
   },
-
-  extends: [
-    '@inker/eslint-config',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:@typescript-eslint/strict',
-    'plugin:import/typescript',
-  ],
-
-  plugins: [
-    '@typescript-eslint',
-  ],
 
   settings: {
     // Append 'ts' extensions to Airbnb 'import/resolver' setting
@@ -50,6 +49,25 @@ module.exports = {
   rules: {
     'import/consistent-type-specifier-style': [2, 'prefer-inline'],
 
+    'default-param-last': 0, // The TS one is enabled
+    'no-shadow': 0, // The TS one is enabled
+    'no-unused-vars': 0, // The TS one is enabled
+    'no-use-before-define': 0, // The TS one is enabled
+
+    '@stylistic/ts/padding-line-between-statements': [
+      2,
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['function', 'class', 'cjs-export', 'interface', 'type'],
+      },
+      {
+        blankLine: 'always',
+        prev: ['function', 'class', 'cjs-export', 'interface', 'type'],
+        next: '*',
+      },
+    ],
+
     '@typescript-eslint/array-type': 2,
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
@@ -57,16 +75,13 @@ module.exports = {
       fixStyle: 'inline-type-imports',
     }],
     '@typescript-eslint/default-param-last': 2,
-    '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/method-signature-style': 2,
-    '@typescript-eslint/no-explicit-any': 0,
     'no-extra-parens': 0,
     '@typescript-eslint/no-extra-parens': [2, 'all', {
       enforceForArrowConditionals: false,
       enforceForNewInMemberExpressions: false,
     }],
-    '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-shadow': 2,
     '@typescript-eslint/no-unnecessary-condition': 0,
     '@typescript-eslint/no-unused-vars': [2, {
@@ -75,11 +90,15 @@ module.exports = {
       ignoreRestSiblings: false,
     }],
     '@typescript-eslint/prefer-nullish-coalescing': [2, {
+      ignoreConditionalTests: true,
       ignorePrimitives: {
+        boolean: true,
+        bigint: true,
+        number: true,
         string: true,
       },
     }],
     '@typescript-eslint/prefer-optional-chain': 2,
     '@typescript-eslint/prefer-readonly': 2,
   },
-}
+};
