@@ -2,13 +2,14 @@
   "name": "@inker/eslint-config-typescript",
   "version": "11.2.0",
   "description": "TypeScript Eslint config",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "engines": {
-    "node": ">=16.0.0"
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "scripts": {
     "test": "exit 0",
-    "lint": "eslint -c index.js --no-eslintrc index.js",
+    "lint": "eslint",
     "release": "np --no-cleanup"
   },
   "repository": {
@@ -27,18 +28,19 @@
   },
   "homepage": "https://github.com/inker/eslint-config-typescript#readme",
   "dependencies": {
-    "@inker/eslint-config": "^11.2.0",
-    "@stylistic/eslint-plugin-ts": "^2.8.0",
-    "@typescript-eslint/eslint-plugin": "^8.6.0",
-    "@typescript-eslint/parser": "^8.6.0"
+    "@inker/eslint-config": "^12.0.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.17.1",
+    "typescript-eslint": "^8.71.2"
   },
   "peerDependencies": {
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.25.4"
+    "eslint": "^10.4.0",
+    "typescript": ">=4.8.4 <6.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^10.13.0",
     "np": "^10.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "^6.0.3"
   }
 }
